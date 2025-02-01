@@ -1,0 +1,6 @@
+django
+django-ckeditor
+djangorestframework
+googletrans==4.0.0-rc1
+flake8
+pytest
