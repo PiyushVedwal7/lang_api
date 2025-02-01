@@ -54,3 +54,19 @@ GET /api/faqs/{id}/
 Fetch a specific FAQ by its ID.
 
 
+
+#######  Step-by-Step Guide to Set Up and Run the Django Project ########
+
+1) git clone https://github.com/PiyushVedwal7/lang_api.git
+2) cd lang_api
+3) python -m venv venv
+4)venv\Scripts\activate
+5)pip install -r requirements.txt
+6)python manage.py migrate
+7)python manage.py createsuperuser
+8)python manage.py runserver
+9)Django Admin Panel: http://127.0.0.1:8000/admin/
+
+
+
+
