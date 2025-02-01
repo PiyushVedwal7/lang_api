@@ -53,8 +53,4 @@ The system will automatically translate the question into Hindi and Bengali.
 GET /api/faqs/{id}/
 Fetch a specific FAQ by its ID.
 
-PUT /api/faqs/{id}/
-Update a specific FAQ by its ID.
 
-DELETE /api/faqs/{id}/
-Delete a specific FAQ by its ID.
