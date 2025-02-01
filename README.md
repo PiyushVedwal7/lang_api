@@ -24,3 +24,37 @@ This project is a Django application that provides an API for handling FAQs in m
 ```bash
 git clone https://github.com/PiyushVedwal7/lang_api.git
 cd lang_api
+
+
+Step 2: Run the development server
+
+python manage.py runserver
+The API will be accessible at http://localhost:8000/api/faqs/.
+
+API Endpoints
+GET /api/faqs/
+Fetch all FAQs.
+
+Query Parameters
+language: Optional. Filters FAQs by language. Accepts values hi (Hindi) or bn (Bengali).
+Example:
+
+
+http://localhost:8000/api/faqs/?language=hi
+Returns only FAQs with Hindi translations.
+
+POST /api/faqs/
+{
+  "question": "What is your favorite color?",
+  "answer": "My favorite color is blue."
+}
+The system will automatically translate the question into Hindi and Bengali.
+
+GET /api/faqs/{id}/
+Fetch a specific FAQ by its ID.
+
+PUT /api/faqs/{id}/
+Update a specific FAQ by its ID.
+
+DELETE /api/faqs/{id}/
+Delete a specific FAQ by its ID.
